@@ -6,11 +6,16 @@
   box-sizing: border-box;
   font-size: 16px;
   font-family: "Raleway", Verdana, Geneva, Tahoma, sans-serif;
-  --bg-color: rgb(230, 230, 230);
-  --header-color: rgb(255, 255, 255);
-  --sidebar-color: rgb(0, 102, 255);
+  --bg-color: #E8EAE5;
+  --header-color: #FFFFFF;
+  --sidebar-color: #00412E;
   --text-color: rgb(65, 65, 65);
   --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  --secondary-color: #96BF8A;
+}
+a, i {
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -23,9 +28,10 @@ body {
   min-height: 100vh;
   height: auto;
 }
-/* * {
-  border: 1px solid red;
-} */
+
+button:hover {
+  color: var(--secondary-color);
+}
 
 /* Sidebar */
 .sidebar {
@@ -35,7 +41,7 @@ body {
   color: white;
   font-weight: bold;
   gap: 75px;
-  padding: 20px 12px;
+  padding: 20px 16px;
   display: flex;
   flex-direction: column;
 }
@@ -81,7 +87,7 @@ body {
 }
 
 .upper-header,
-.lower-header {
+.lower-header, .lower-header a {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -98,6 +104,8 @@ input[type="search"] {
   background: #dfdfdf;
   border: none;
   border-radius: 8px;
+  font-size: 1.3rem;
+  
 }
 .searchbar > button {
   border: none;
@@ -105,16 +113,20 @@ input[type="search"] {
   scale: 0.8;
   cursor: pointer;
 }
-
+.searchbar > button i {
+  vertical-align: middle;
+}
 .user-page {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 16px;
 }
-
+.user-page a i {
+  vertical-align: middle;
+}
 /* Lower-header */
-.user {
+.user a {
   display: flex;
   gap: 8px;
   align-items: center;
@@ -144,6 +156,9 @@ input[type="search"] {
   font-weight: bold;
   padding: 6px 24px;
   cursor: pointer;
+}
+.actions > button:hover {
+  background-color: var(--secondary-color);
 }
 
 /* Main */
@@ -175,7 +190,7 @@ input[type="search"] {
   display: grid;
   grid-template-rows: 1fr auto;
   box-shadow: var(--box-shadow);
-  border-left: 8px solid orange;
+  border-left: 8px solid var(--secondary-color);
 }
 .card-title {
   font-size: 1rem;
@@ -193,6 +208,9 @@ input[type="search"] {
 a {
   color: black;
   text-decoration: none;
+}
+a:hover {
+  color: var(--secondary-color)
 }
 /* Announcements and Trending*/
 
@@ -213,7 +231,6 @@ a {
 .item p:first-of-type {
   font-weight: bold;
   font-size: 0.9rem;
-  color: black;
 }
 .item p:nth-of-type(2) {
   font-size: 0.8rem;
