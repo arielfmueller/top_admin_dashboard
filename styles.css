@@ -12,10 +12,14 @@
 
 body {
   display: grid;
-  grid-template-columns: 1fr 4fr;
-  grid-template-rows: 1fr 5fr;
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: 120px auto;
 }
-
+html,
+body {
+  min-height: 100vh;
+  height: auto;
+}
 /* * {
   border: 1px solid red;
 } */
@@ -27,10 +31,10 @@ body {
   grid-row: 1 / 3;
   color: white;
   font-weight: bold;
-  display: grid;
-  grid-template-rows: 1fr 2fr 2fr 2fr;
-  gap: 40px;
-  padding-left: 12px;
+  gap: 75px;
+  padding: 20px 12px;
+  display: flex;
+  flex-direction: column;
 }
 
 .sidebar a {
@@ -46,7 +50,13 @@ body {
   align-items: center;
   gap: 8px;
 }
-
+.pages, .settings {
+  display: grid;
+  gap: 10px;
+}
+.settings {
+  margin-top: auto;
+}
 .dashboard > p {
   font-size: 1.6rem;
 }
@@ -103,6 +113,13 @@ input[type="search"] {
   align-items: center;
   gap: 8px;
 }
+.user p {
+  font-size: .8rem;
+}
+.user h2 {
+  font-size: 1.2rem;;
+}
+
 .actions {
   display: flex;
   align-items: center;
@@ -124,31 +141,30 @@ input[type="search"] {
   background: var(--bg-color);
   grid-column: 2;
   display: grid;
-  grid-template-columns: 3fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: auto 200px;
+  grid-template-rows: auto;
   gap: 16px;
   padding: 16px;
 }
-
+/* Projects*/
 .projects {
   grid-row: 1 / 3;
 }
 .cards {
-  grid-row: 1 / 3;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 16px;
+  margin-top: 10px;
 }
 
 .card {
-  height: 150px;
+  height: 200px;
   border-radius: 8px;
   background: rgb(255, 255, 255);
   padding: 16px;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  justify-content: center;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  box-shadow: 0 2px 7px rgb(150, 150, 150);
 }
 .card-title {
   font-size: 1rem;
@@ -157,11 +173,31 @@ input[type="search"] {
 .card-text {
   font-size: 0.9rem;
 }
-.card div {
-  align-self: flex-end;
+.card-icon {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px
 }
+/* Announcements and Trending*/
 
-.announcements,
-.trending {
-  grid-column: 2;
+.items {
+  margin-top: 10px;
+  border-radius: 8px;
+  background: rgb(255, 255, 255);
+  padding: 16px;
+  display: grid;
+  grid-template-rows: repeat(auto-fill, minmax(1fr, 1fr));
+  gap: 10px
+}
+.item p:first-of-type {
+  font-weight: bold;
+  font-size: .9rem;
+}
+.item p:nth-of-type(2) {
+  font-size: .8rem;
+  text-align: justify;
+}
+.item:not(:last-of-type) {
+  border-bottom: 1px solid #dbdbdb;
+  padding-bottom: 10px;
 }
