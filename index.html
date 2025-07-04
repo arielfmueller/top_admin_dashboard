@@ -9,6 +9,12 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="sidebar">
@@ -66,16 +72,16 @@
           <button type="submit"><i class="material-icons">search</i></button>
         </div>
         <div class="user-page">
-          <i class="material-icons">notifications_active</i>
-          <i class="material-icons">account_circle</i>
+          <a href="example.com/profile/notifications"><i class="material-icons">notifications_active</i></a>
+          <a href="example.com/profile"><i class="material-icons">account_circle</i></a>
         </div>
       </div>
-      <div class="lower-header">
+      <a href="example.com/profile"><div class="lower-header">
         <div class="user">
           <i class="material-icons">account_circle</i>
           <div class="user-text">
             <p>Hi there,</p>
-            <h2>John Smith</h2>
+            <h2>John Smith (@john_smith)</h2>
           </div>
         </div>
         <div class="actions">
@@ -83,86 +89,126 @@
           <button>Upload</button>
           <button>Share</button>
         </div>
-      </div>
+      </div></a>
     </div>
     <div class="main">
       <div class="projects">
         <p>Your Projects</p>
         <div class="cards">
           <div class="card">
-            <div class="card-content">
-              <p class="card-title">Super Cool Project</p>
-              <p class="card-text">
-                Fusce vel lobortis tellus, vel dapibus dolor. Maecenas odio
-                tortor, facilisis eu ornare non, tristique eu ipsum. Nulla
-                egestas nisl.
-              </p>
-            </div>
-            <div class="card-icon">
-              <i class="material-icons">bookmark_border</i>
-              <i class="material-icons">cloud_download</i>
-              <i class="material-icons">code</i>
-            </div>
+            <a href="example.com/super_cool_project">
+              <div class="card-content">
+                <p class="card-title">Super Cool Project</p>
+                <p class="card-text">
+                  Fusce vel lobortis tellus, vel dapibus dolor. Maecenas odio
+                  tortor, facilisis eu ornare non, tristique eu ipsum. Nulla
+                  egestas nisl.
+                </p>
+              </div>
+              <div class="card-icon">
+                <a href="example.com/super_cool_project/bookmark"
+                  ><i class="material-icons">bookmark_border</i></a
+                >
+                <a href="example.com/super_cool_project/download"
+                  ><i class="material-icons">cloud_download</i></a
+                >
+                <a href="example.com/super_cool_project/code"
+                  ><i class="material-icons">code</i></a
+                >
+              </div></a
+            >
           </div>
           <div class="card">
-            <div class="card-content">
-              <p class="card-title">Less Cool Project</p>
-              <p class="card-text">
-                Nam vitae massa neque. Quisque convallis convallis leo a
-                vehicula. Nulla facilisi. Nulla tincidunt sapien id sem
-                lobortis, sed aliquet augue ullamcorper.
-              </p>
-            </div>
-            <div class="card-icon">
-              <i class="material-icons">bookmark_border</i>
-              <i class="material-icons">cloud_download</i>
-              <i class="material-icons">code</i>
-            </div>
+            <a href="example.com/less_cool_project">
+              <div class="card-content">
+                <p class="card-title">Less Cool Project</p>
+                <p class="card-text">
+                  Nam vitae massa neque. Quisque convallis convallis leo a
+                  vehicula. Nulla facilisi. Nulla tincidunt sapien id sem
+                  lobortis, sed aliquet augue ullamcorper.
+                </p>
+              </div>
+              <div class="card-icon">
+                <a href="example.com/less_cool_project/bookmark"
+                  ><i class="material-icons">bookmark_border</i></a
+                >
+                <a href="example.com/less_cool_project/download"
+                  ><i class="material-icons">cloud_download</i></a
+                >
+                <a href="example.com/less_cool_project/code"
+                  ><i class="material-icons">code</i></a
+                >
+              </div></a
+            >
           </div>
           <div class="card">
-            <div class="card-content">
-              <p class="card-title">Impossible App</p>
-              <p class="card-text">
-                Duis nec ullamcorper dolor. Sed interdum, eros mattis luctus
-                tincidunt, sapien diam bibendum lacus, et pulvinar.
-              </p>
-            </div>
-            <div class="card-icon">
-              <i class="material-icons">bookmark_border</i>
-              <i class="material-icons">cloud_download</i>
-              <i class="material-icons">code</i>
-            </div>
+            <a href="example.com/impossible_app">
+              <div class="card-content">
+                <p class="card-title">Impossible App</p>
+                <p class="card-text">
+                  Duis nec ullamcorper dolor. Sed interdum, eros mattis luctus
+                  tincidunt, sapien diam bibendum lacus, et pulvinar.
+                </p>
+              </div>
+              <div class="card-icon">
+                <a href="example.com/impossible_app/bookmark"
+                  ><i class="material-icons">bookmark_border</i></a
+                >
+                <a href="example.com/impossible_app/download"
+                  ><i class="material-icons">cloud_download</i></a
+                >
+                <a href="example.com/impossible_app/code"
+                  ><i class="material-icons">code</i></a
+                >
+              </div></a
+            >
           </div>
           <div class="card">
-            <div class="card-content">
-              <p class="card-title">Easy Peasy App</p>
-              <p class="card-text">
-                Interdum et malesuada fames ac ante ipsum primis in faucibus.
-                Fusce eu enim eget eros accumsan congue a non justo. Nullam.
-              </p>
-            </div>
-            <div class="card-icon">
-              <i class="material-icons">bookmark_border</i>
-              <i class="material-icons">cloud_download</i>
-              <i class="material-icons">code</i>
-            </div>
+            <a href="example.com/easy_peasy_app">
+              <div class="card-content">
+                <p class="card-title">Easy Peasy App</p>
+                <p class="card-text">
+                  Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                  Fusce eu enim eget eros accumsan congue a non justo. Nullam.
+                </p>
+              </div>
+              <div class="card-icon">
+                <a href="example.com/easy_peasy_app/bookmark"
+                  ><i class="material-icons">bookmark_border</i></a
+                >
+                <a href="example.com/easy_peasy_app/download"
+                  ><i class="material-icons">cloud_download</i></a
+                >
+                <a href="example.com/easy_peasy_app/code"
+                  ><i class="material-icons">code</i></a
+                >
+              </div></a
+            >
           </div>
           <div class="card">
-            <div class="card-content">
-              <p class="card-title">Ad Blocker</p>
-              <p class="card-text">
-                Nunc sit amet velit a justo consequat posuere. Vestibulum
-                laoreet vitae lacus sit amet hendrerit. Proin consectetur
-                lobortis auctor. Sed tempus justo in tristique.
-              </p>
-            </div>
-            <div class="card-icon">
-              <i class="material-icons">bookmark_border</i>
-              <i class="material-icons">cloud_download</i>
-              <i class="material-icons">code</i>
-            </div>
+            <a href="example.com/ad_blocker">
+              <div class="card-content">
+                <p class="card-title">Ad Blocker</p>
+                <p class="card-text">
+                  Nunc sit amet velit a justo consequat posuere. Vestibulum
+                  laoreet vitae lacus sit amet hendrerit. Proin consectetur
+                  lobortis auctor. Sed tempus justo in tristique.
+                </p>
+              </div>
+              <div class="card-icon">
+                <a href="example.com/ad_blocker/bookmark"
+                  ><i class="material-icons">bookmark_border</i></a
+                >
+                <a href="example.com/ad_blocker/download"
+                  ><i class="material-icons">cloud_download</i></a
+                >
+                <a href="example.com/ad_blocker/code"
+                  ><i class="material-icons">code</i></a
+                >
+              </div></a
+            >
           </div>
-          <div class="card">
+          <div class="card"><a href="example.com/money_maker">
             <div class="card-content">
               <p class="card-title">Money Maker</p>
               <p class="card-text">
@@ -172,10 +218,14 @@
               </p>
             </div>
             <div class="card-icon">
-              <i class="material-icons">bookmark_border</i>
-              <i class="material-icons">cloud_download</i>
-              <i class="material-icons">code</i>
-            </div>
+              <a href="example.com/money_maker/bookmark"
+                ><i class="material-icons">bookmark_border</i></a
+              >
+              <a href="example.com/money_maker/download"
+                ><i class="material-icons">cloud_download</i></a
+              >
+              <a href="example.com/money_maker/code"><i class="material-icons">code</i></a>
+            </div></a>
           </div>
         </div>
       </div>
@@ -183,24 +233,68 @@
         <p>Announcements</p>
         <div class="items">
           <div class="item">
-            <p>Site Maintenance</p>
-            <p>Praesent lacinia orci vel erat pretium, in ultricies velit mollis. In quam purus, semper vitae malesuada non, imperdiet at dui. Ut eget dolor.</p>
+            <a href="example.com/site_maintenance">
+              <p>Site Maintenance</p>
+              <p>
+                Praesent lacinia orci vel erat pretium, in ultricies velit
+                mollis. In quam purus, semper vitae malesuada non, imperdiet at
+                dui. Ut eget dolor.
+              </p>
+            </a>
           </div>
           <div class="item">
-            <p>Community Share Day</p>
-            <p>Aliquam tincidunt rutrum odio, eget eleifend massa. Etiam auctor mollis libero sed rhoncus. In luctus felis ligula.</p>
+            <a href="example.com/community_share_day">
+              <p>Community Share Day</p>
+              <p>
+                Aliquam tincidunt rutrum odio, eget eleifend massa. Etiam auctor
+                mollis libero sed rhoncus. In luctus felis ligula.
+              </p>
+            </a>
           </div>
           <div class="item">
-            <p>Updated Privacy Policy</p>
-            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin sollicitudin faucibus condimentum. Suspendisse vel est risus.
-
-</p>
+            <a href="example.com/updated_private_policy">
+              <p>Updated Privacy Policy</p>
+              <p>
+                Pellentesque habitant morbi tristique senectus et netus et
+                malesuada fames ac turpis egestas. Proin sollicitudin faucibus
+                condimentum. Suspendisse vel est risus.
+              </p>
+            </a>
           </div>
         </div>
       </div>
       <div class="trending">
         <p>Trending</p>
-        <div></div>
+        <div class="trends">
+          <div><a href="example.com/tegan/world_peace_builder">
+            <i class="material-icons">account_circle</i>
+            <div class="trend-text">
+              <p>@tegan</p>
+              <p>World Peace Builder</p>
+            </div></a>
+          </div>
+          <div><a href="example.com/morgan/super_cool_project">
+            <i class="material-icons">account_circle</i>
+            <div class="trend-text">
+              <p>@morgan</p>
+              <p>Super Cool Project</p>
+            </div></a>
+          </div>
+          <div><a href="example.com/kendall/life_changing_app">
+            <i class="material-icons">account_circle</i>
+            <div class="trend-text">
+              <p>@kendall</p>
+              <p>Life Changing App</p>
+            </div></a>
+          </div>
+          <div><a href="example.com/alex/no_traffic_maker">
+            <i class="material-icons">account_circle</i>
+            <div class="trend-text">
+              <p>@alex</p>
+              <p>No Traffic Maker</p>
+            </div></a>
+          </div>
+        </div>
       </div>
     </div>
   </body>
